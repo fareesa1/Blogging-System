@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="feed_style.css">
+</head>
+
+<body>
+    <div class="nav-container" >
+        <div class="icon" >
+            <img src="https://picsum.photos/700" width="30px" height="30px" >
+            <h2>BBS</h2>
+        </div>  
+        <div class="nav-child" >
+            <a href="createpost.html">CREATE POST</a>   
+            <a href="feed.html">EXPLORE</a>
+            <a href="logout.html">LOGOUT</a>
+            <a href="myPost.html">MY POST</a>
+        </div>
+    </div>
+<div style="margin-left: 100px;" >
+    <p style="font-size: 50px;text-align: center;" >SHARE YOU IDEAS</p>
+    <center>
+<img src="https://i.pinimg.com/originals/d3/46/4a/d3464a4351fdf340ccb6bb37c281381a.gif" alt="">
+</center>
+</div>
+    <div class="form-container">
+    <input type="title" id="input_title" placeholder="Enter title for the post">
+    <textarea rows = "5" cols = "40" id="input_description" name = "description">
+     </textarea>
+    <button style="border-radius: 20px;" type="button" onclick="addUserData()"  >Create Post</button>
+</div>  
+    <p id="name"></p>
+</body>
+
+</html>
